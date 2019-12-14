@@ -52,8 +52,12 @@ body {
     font-weight: 200;
 }
 
+.site-header {
+    background: url(../images/hero.svg);
+}
 
-
-
+.layout-social .layout-icon {
+    font-size: 2em;
+}
 
    

@@ -14,26 +14,61 @@
 <body>
 
   <header id="page-hero" class="site-header">
+    
     <nav class="site-nav family-sans text-uppercase navbar navbar-expand-md bg-secondary navbar-dark">
-       
+
       <div class="container-fluid">
-          <a class="navbar-brand" href="#page-hero">
-              <i class="fas fa-coffee"></i> coffee with android</a>       
-            <div class="navbar-nav">
-              <a class="nav-item nav-link" href="#page-hero">home</a>
-              <a class="nav-item nav-link" href="#page-multicolumn">columns</a>
-              <a class="nav-item nav-link" href="#page-media">media</a>
-              <a class="nav-item nav-link" href="#page-photogrid">grid</a>
-              <a class="nav-item nav-link" href="#page-carousel">carousel</a>
-              <a class="nav-item nav-link" href="#page-nested">nested</a>
-              <a class="nav-item nav-link" href="#page-icons">icons</a>
-              <a class="nav-item nav-link" href="#page-floater">floater</a>
-              <a class="nav-item nav-link" href="#page-cards">cards</a>
-            </div>
+        <a class="navbar-brand" href="#page-hero">
+          <i class="fas fa-coffee"></i> coffee with android</a>
+
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav"
+          aria-controls="#myTogglerNav" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <section class="collapse navbar-collapse" id="myTogglerNav">
+
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="#page-hero">home</a>
+            <a class="nav-item nav-link" href="#page-multicolumn">columns</a>
+            <a class="nav-item nav-link" href="#page-media">media</a>
+            <a class="nav-item nav-link" href="#page-photogrid">grid</a>
+            <a class="nav-item nav-link" href="#page-carousel">carousel</a>
+            <a class="nav-item nav-link" href="#page-nested">nested</a>
+            <a class="nav-item nav-link" href="#page-icons">icons</a>
+            <a class="nav-item nav-link" href="#page-floater">floater</a>
+            <a class="nav-item nav-link" href="#page-cards">cards</a>
+          </div>
+        </section>
       </div>
-     
+
     </nav>
+
+    <section class="layout-hero">
+      <h3>Welcome !</h3>
+      <p>One shot solution for all your android needs.</p>
+
+    </section>
   </header>
+
+  <footer class="site-footer bg-secondary d-flex justify-content-center">
+
+    <section class="layout-social py-5">
+
+      <a class="text-light px-2" target="_blank" href="https://www.facebook.com/coffeewithandroid/">
+        <i class="layout-icon fab fa-facebook"></i>
+      </a>
+      <a class="text-light px-2" target="_blank" href="https://www.linkedin.com/in/antarjot-singh/">
+        <i class="layout-icon fab fa-linkedin"></i>
+      </a>
+      <a class="text-light px-2" target="_blank" href="https://github.com/AntarjotSingh">
+        <i class="layout-icon fab fa-github"></i>
+      </a>
+      <a class="text-light px-2" target="_blank" href="https://www.youtube.com/channel/UC1SGPh0GDl-vQ2gP9FDjFIg/featured?view_as=subscriber">
+        <i class="layout-icon fab fa-youtube"></i>
+      </a>
+    </section>
+  </footer>
 
   <script src="js/lib/jquery.min.js"></script>
   <script src="js/lib/bootstrap.bundle.min.js"></script>
