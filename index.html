@@ -10,65 +10,487 @@
   <link rel="stylesheet" href="css/style.css">
   <title>coffeewithandroid</title>
 </head>
-
-<body>
+<body data-spy="scroll" data-target=".site-nav" data-offset="55">
 
   <header id="page-hero" class="site-header">
-    
-    <nav class="site-nav family-sans text-uppercase navbar navbar-expand-md bg-secondary navbar-dark">
+
+    <nav class="site-nav family-sans navbar navbar-expand-md navbar-dark fixed-top py-3">
 
       <div class="container-fluid">
-        <a class="navbar-brand" href="#page-hero">
-          <i class="fas fa-coffee"></i> coffee with android</a>
 
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav"
-          aria-controls="#myTogglerNav" aria-label="Toggle Navigation">
+        <a class="navbar-brand" href="#page-hero">
+          <i class="fas fa-coffee mx-2"></i>  Coffee with Android</a>
+
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav" aria-controls="#myTogglerNav"
+          aria-label="Toggle Navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <section class="collapse navbar-collapse" id="myTogglerNav">
-
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#page-hero">home</a>
-            <a class="nav-item nav-link" href="#page-multicolumn">columns</a>
-            <a class="nav-item nav-link" href="#page-media">media</a>
-            <a class="nav-item nav-link" href="#page-photogrid">grid</a>
-            <a class="nav-item nav-link" href="#page-carousel">carousel</a>
-            <a class="nav-item nav-link" href="#page-nested">nested</a>
-            <a class="nav-item nav-link" href="#page-icons">icons</a>
-            <a class="nav-item nav-link" href="#page-floater">floater</a>
-            <a class="nav-item nav-link" href="#page-cards">cards</a>
+            <a class="nav-item nav-link" href="#page-hero">Home</a>
+            <!-- <a class="nav-item nav-link" href="#page-multicolumn">columns</a> -->
+            <a class="nav-item nav-link" href="#page-media">What I do</a>
+            <!-- <a class="nav-item nav-link" href="#page-photogrid">grid</a> -->
+            <!-- <a class="nav-item nav-link" href="#page-carousel">carousel</a> -->
+            <a class="nav-item nav-link" href="#page-cards">Projects</a>
+            <a class="nav-item nav-link" href="#page-nested">Bio</a>
+            <!-- <a class="nav-item nav-link" href="#page-iconcolumns">icons</a>
+            <a class="nav-item nav-link" href="#page-floater">floater</a> -->
           </div>
         </section>
+
       </div>
 
     </nav>
 
-    <section class="layout-hero">
-      <h3>Welcome !</h3>
-      <p>One shot solution for all your android needs.</p>
-
+    <section class="layout-hero d-flex align-items-center text-light text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-11 col-sm-10 col-md-8 animated fadeInUp">
+            <h3 class="page-section-title">Welcome !</h3>
+            <p class="page-section-text">The one place hot spot for all your android needs.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
+
   </header>
 
-  <footer class="site-footer bg-secondary d-flex justify-content-center">
+  <!-- <article id="page-multicolumn" class="page-section text-center py-5">
+
+    <header class="page-section-header container">
+      <div class="row justify-content-center">
+        <div class="col-11 col-sm-10 col-md-8">
+          <h2 class="page-section-title">Multi-column</h2>
+          <p class="page-section-text">This layout uses multiple column rules so that how many columns each group takes depends on the width of the browser.</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="layout-multicolumn container">
+
+      <div class="row justify-content-center family-sans text-uppercase">
+
+        <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+          <a data-toggle="modal" data-target="#site-modal" data-highres="images/monster01.svg" href="#">
+            <img class="layout-image" src="images/monster01_tn.svg" alt="Monster Image 01">
+          </a>
+          <h5 class="layout-title pt-2">Mingle</h5>
+        </section>
+
+        <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+          <a data-toggle="modal" data-target="#site-modal" data-highres="images/monster02.svg" href="#">
+            <img class="layout-image" src="images/monster02_tn.svg" alt="Monster Image 02">
+          </a>
+          <h5 class="layout-title pt-2">Yodel</h5>
+        </section>
+
+        <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+          <a data-toggle="modal" data-target="#site-modal" data-highres="images/monster03.svg" href="#">
+            <img class="layout-image" src="images/monster03_tn.svg" alt="Monster Image 03">
+          </a>
+          <h5 class="layout-title pt-2">Squido</h5>
+        </section>
+
+        <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+          <a data-toggle="modal" data-target="#site-modal" data-highres="images/monster04.svg" href="#">
+            <img class="layout-image" src="images/monster04_tn.svg" alt="Monster Image 04">
+          </a>
+          <h5 class="layout-title pt-2">Spook</h5>
+        </section>
+
+        <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+          <a data-toggle="modal" data-target="#site-modal" data-highres="images/monster05.svg" href="#">
+            <img class="layout-image" src="images/monster05_tn.svg" alt="Monster Image 05">
+          </a>
+          <h5 class="layout-title pt-2">Melville</h5>
+        </section>
+
+        <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+          <a data-toggle="modal" data-target="#site-modal" data-highres="images/monster06.svg" href="#">
+            <img class="layout-image" src="images/monster06_tn.svg" alt="Monster Image 06">
+          </a>
+          <h5 class="layout-title pt-2">Filo</h5>
+        </section>
+
+        <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+          <a data-toggle="modal" data-target="#site-modal" data-highres="images/monster07.svg" href="#">
+            <img class="layout-image" src="images/monster07_tn.svg" alt="Monster Image 07">
+          </a>
+          <h5 class="layout-title pt-2">Blade</h5>
+        </section>
+
+        <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+          <a data-toggle="modal" data-target="#site-modal" data-highres="images/monster08.svg" href="#">
+            <img class="layout-image" src="images/monster08_tn.svg" alt="Monster Image 08">
+          </a>
+          <h5 class="layout-title pt-2">Timber</h5>
+        </section>
+
+        <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+          <a data-toggle="modal" data-target="#site-modal" data-highres="images/monster09.svg" href="#">
+            <img class="layout-image" src="images/monster09_tn.svg" alt="Monster Image 09">
+          </a>
+          <h5 class="layout-title pt-2">Skedaddle</h5>
+        </section>
+
+        <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+          <a data-toggle="modal" data-target="#site-modal" data-highres="images/monster10.svg" href="#">
+            <img class="layout-image" src="images/monster10_tn.svg" alt="Monster Image 10">
+          </a>
+          <h5 class="layout-title pt-2">Smiley</h5>
+        </section>
+
+        <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+          <a data-toggle="modal" data-target="#site-modal" data-highres="images/monster11.svg" href="#">
+            <img class="layout-image" src="images/monster11_tn.svg" alt="Monster Image 11">
+          </a>
+          <h5 class="layout-title pt-2">Frex</h5>
+        </section>
+
+        <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+          <a data-toggle="modal" data-target="#site-modal" data-highres="images/monster12.svg" href="#">
+            <img class="layout-image" src="images/monster12_tn.svg" alt="Monster Image 12">
+          </a>
+          <h5 class="layout-title pt-2">Drift</h5>
+        </section>
+
+      </div>
+
+    </section>
+  </article> -->
+
+  <article id="page-media" class="page-section py-5">
+
+    <header class="page-section-header container text-center">
+      <h2 class="page-section-title">What I do</h2>
+      <p class="page-section-text">A quick way to create a two-column pattern that shows an image next to a photo. In Bootstrap 4, you gain the ability
+        to center elements using flexbox classes. A couple of things to watch out for is that these will always render as
+        single columns and can sometimes be too wide, so these particular media elements are inside an eight-column grid.</p>
+      <img class="layout-image" src="images/wedo_cover.png" alt="What I do">
+    </header>
+
+    <section class="layout-media container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 layout-animation">
+
+          <h2 class="page-section-title mt-5">Samples</h2>
+          <hr>
+          <section class="media">
+            <img class="layout-image mx-5 my-5" src="images/RecyclerView.gif" alt="Media Image 01">
+            <div class="media-body">
+              <h4 class="layout-title my-5">Recycler View</h4>
+              <p class="layout-text">Yodel grew up in a family of singers and loud talkers and could never get a word in edgewise. Then his vast
+                talent for yodeling emerged. Now he performs to adoring fans throughout the world, and always has the loudest
+                voice at the dinner table.
+              </p>
+            </div>
+          </section>
+
+          <section class="media">
+            <img class="layout-image mx-5 my-5" src="images/TabLayout.gif" alt="Media Image 02">
+            <div class="media-body">
+              <h4 class="layout-title my-5">Tab Layout with Text and icons</h4>
+              <p class="layout-text">Filo was named after the wonderful, buttery pastry crust that monsters adore. She's a prominent baker and pastry
+                chef in monster circles and is always exploring and sharing new dessert trends.</p>
+            </div>
+          </section>
+
+          <section class="media">
+            <img class="layout-image mx-5 my-5" src="images/AutoComplete.png" alt="Media Image 03">
+            <div class="media-body">
+              <h4 class="layout-title my-5">AutoComplete TextView</h4>
+              <p class="layout-text">With the bad rap they get from movies, monsters have it pretty tough. Perhaps no monster has done more to squash
+                stereotypes than Smiley, who can take anyone's frown and turn it upside down.</p>
+            </div>
+          </section>
+
+
+        </div>
+      </div>
+
+    </section>
+
+  </article>
+
+  <!-- <article id="page-photogrid" class="page-section">
+
+    <section class="layout-photogrid">
+      <div class="row justify-content-center no-gutters">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <img class="layout-image" src="images/monster01_tn.svg" alt="Monster 01 image">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <img class="layout-image" src="images/monster02_tn.svg" alt="Monster 02 image">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <img class="layout-image" src="images/monster03_tn.svg" alt="Monster 03 image">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <img class="layout-image" src="images/monster04_tn.svg" alt="Monster 04 image">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <img class="layout-image" src="images/monster05_tn.svg" alt="Monster 05 image">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <img class="layout-image" src="images/monster06_tn.svg" alt="Monster 06 image">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <img class="layout-image" src="images/monster07_tn.svg" alt="Monster 07 image">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <img class="layout-image" src="images/monster08_tn.svg" alt="Monster 08 image">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <img class="layout-image" src="images/monster09_tn.svg" alt="Monster 09 image">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <img class="layout-image" src="images/monster10_tn.svg" alt="Monster 10 image">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <img class="layout-image" src="images/monster11_tn.svg" alt="Monster 11 image">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <img class="layout-image" src="images/monster12_tn.svg" alt="Monster 12 image">
+        </div>
+      </div>
+
+    </section>
+
+  </article> -->
+
+  <!-- <article id="page-carousel" class="page-section">
+
+    <section id="layout-carousel" class="layout-carousel carousel slide" data-ride="carousel">
+
+      <div class="carousel-inner">
+
+        <ol class="carousel-indicators">
+          <li data-target="#layout-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#layout-carousel" data-slide-to="1"></li>
+          <li data-target="#layout-carousel" data-slide-to="2"></li>
+        </ol>
+
+        <section class="carousel-item active">
+          <img class="layout-image img-fluid d-block" src="images/carousel01.svg" alt="Carousel Image 01">
+        </section>
+
+        <section class="carousel-item">
+          <img class="layout-image img-fluid d-block" src="images/carousel02.svg" alt="Carousel Image 02">
+        </section>
+
+        <section class="carousel-item">
+          <img class="layout-image img-fluid d-block" src="images/carousel03.svg" alt="Carousel Image 03">
+        </section>
+
+        <a class="carousel-control-prev" href="#layout-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon">
+            <span class="sr-only">Previous</span>
+          </span>
+        </a>
+        <a class="carousel-control-next" href="#layout-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon">
+            <span class="sr-only">Next</span>
+          </span>
+        </a>
+      </div>
+
+    </section>
+
+  </article> -->
+
+
+  <article id="page-cards" class="page-section">
+
+    <section class="layout-cards container">
+
+      <div class="row justify-content-center">
+
+        <div class="col-8 col-sm-12 col-lg-12 pb-5">
+          <h1 class="page-section-title">Projects</h1>
+          <hr>
+          <div class="card-deck">
+            
+            <section class="card my-3">
+              <a href="https://play.google.com/store/apps/details?id=com.coffeewithandroid.i322051.uniso">
+              <img class="layout-image card-img-top img-fluid" src="images/uniso_card.png" alt="UniSo">
+              <div class="card-body">
+                <h4 class="layout-title card-title">UniSo</h4>
+                <p class="layout-text card-text">Now get your Results, Date Sheets and Notices on your mobile. Stay connected with your university for latest updates at ease of your hand.</p>
+              </div>
+             </a>
+            </section>
+
+            
+            <section class="card my-3">
+              <a href="https://play.google.com/store/apps/details?id=com.coffeewithandroid.kirtandarbar_final">
+              <img class="layout-image card-img-top img-fluid" src="images/kirtan_darbar_card.png" alt="Kirtan Darbar">
+              <div class="card-body">
+                <h4 class="layout-title card-title">Kirtan Darbar</h4>
+                <p class="layout-text card-text">Listen live kirtan from Sri Harmandir Sahib, Amritsar</p>
+              </div>
+              </a>
+            </section>
+            
+
+            <section class="card my-3">
+              <a href="https://play.google.com/store/apps/details?id=com.sap.vt.android.vt">
+              <img class="layout-image card-img-top img-fluid" src="images/attendance_app_card.png" alt="Attendance App">
+              <div class="card-body">
+                <h4 class="layout-title card-title">Attendance App</h4>
+                <p class="layout-text card-text">Attendance App for WILP Mtech Classes. This application is used by WILP program under BITS Pilani to take attendance for their M.tech classes.</p>
+              </div>
+              </a>
+            </section>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </article>
+
+  <article id="page-nested" class="page-section">
+
+    <div class="layout-nested container py-5">
+
+      <div class="row justify-content-center">
+
+        <section class="col-sm-10 col-md-5 col-lg-12 text-center text-lg-left">
+
+          <h1 class="page-section-title">Bio</h1>
+          <hr>
+          <div class="row align-items-center justify-content-center">
+            <section class="col-lg-3">
+              <img class="layout-image" src="images/bio_pic.png" alt="Antarjot">
+            </section>
+
+            <section class="col-lg-9">
+              <h2 class="layout-title">Antarjot</h2>
+              <p class="layout-text">Experienced Associate Developer with a demonstrated history of working in the computer software industry. Skilled in SQL, Node.js, SAP HANA, and ABAP. Strong engineering professional with a Master of Technology (M.Tech.) focused in Computer Software Engineering from Birla Institute of Technology and Science, Pilani. 
+              </p>
+            </section>
+          </div>
+
+        </section>
+
+        <!-- <section class="col-sm-10 col-md-5 col-lg-12 text-center text-lg-left">
+          <div class="row align-items-center justify-content-center">
+
+            <section class="col-lg-3">
+              <img class="layout-image" src="images/nested02.svg" alt="Nested Image 02">
+            </section>
+
+            <section class="col-lg-9">
+              <h2 class="layout-title">Emerging talent</h2>
+              <p class="layout-text">Monsters are forces to reckon with in the burgeoning technology industry. They're masterminds in HTML, CSS,
+                PHP, and all those other cool acronyms, and they have a special fondness for building games and productivity
+                apps for Android and iOS devices. And not surprisingly, they love the freedom and creativity that Bootstrap
+                provides. In fact, they're often found hanging out in great responsive layouts, just like this one here.</p>
+            </section>
+          </div>
+
+        </section> -->
+
+      </div>
+
+    </div>
+
+
+  </article>
+
+  <!-- <article id="page-iconcolumns" class="page-section">
+
+    <section class="layout-iconcolumns container py-5">
+
+      <div class="row text-center">
+        <section class="col-md-4 my-3">
+          <img class="icon layout-icon" src="images/icon01.svg" alt="Icon 01">
+          <h3 class="layout-title">Horns</h3>
+          <p class="layout-text">Horns on monsters likely originated as a means for self-defense. However, nowadays they're more commonly used for
+            such routine tasks as opening cans, digging in the garden,and flipping burgers on the grill.</p>
+        </section>
+
+        <section class="col-md-4 my-3">
+          <img class="icon layout-icon" src="images/icon02.svg" alt="Icon 02">
+          <h3 class="layout-title">Tentacles</h3>
+          <p class="layout-text">Monsters with tentacles can mop the floor, cook dinner, and type a winning proposal, all while sipping a steaming
+            hot latte. Their multitasking ability is a talent many aspire to, but most will never achieve.</p>
+        </section>
+
+        <section class="col-md-4 my-3">
+          <img class="icon layout-icon" src="images/icon03.svg" alt="Icon 03">
+          <h3 class="layout-title">Periscope Eyes</h3>
+          <p class="layout-text">Periscope-eyed monsters can watch a football game in the family room, while "keeping an eye" on what's simmering
+            on the stove. Many are also astute detectives who find satisfying work in law enforcement.</p>
+        </section>
+
+      </div>
+
+    </section>
+
+  </article> -->
+
+  <!-- <article id="page-floater" class="page-section">
+
+    <section class="layout-floater container py-5">
+
+      <div class="row align-items-center justify-content-center">
+
+        <section class="layout-container col-8 col-md-4">
+          <img class="layout-image" src="images/floater.svg" alt="Floater Image">
+        </section>
+
+        <section class="col-10 col-md-6 text-center text-md-left pl-md-5">
+          <h2 class="layout-title">You've Got a Friend</h2>
+          <p class="layout-text">When you hang with monsters, you've got the best friends in the world. Feeling down? They'll make your spirits
+            soar. Stomach rumbling? They'll whip you up a satisfying snack. Crave adventure? They'll explore the world with
+            you. You're one lucky individual!
+          </p>
+        </section>
+
+      </div>
+
+    </section>
+
+  </article> -->
+
+  
+
+  <footer class="site-footer text-light d-flex justify-content-center">
 
     <section class="layout-social py-5">
 
-      <a class="text-light px-2" target="_blank" href="https://www.facebook.com/coffeewithandroid/">
+      <!-- <a class="text-light py-2" href="https://twitter.com/planetoftheweb">
+        <i class="layout-icon fab fa-twitter"></i>
+      </a> -->
+      <a class="text-light px-2" href="https://www.facebook.com/coffeewithandroid/">
         <i class="layout-icon fab fa-facebook"></i>
       </a>
-      <a class="text-light px-2" target="_blank" href="https://www.linkedin.com/in/antarjot-singh/">
+      <a class="text-light px-2" href="https://www.linkedin.com/in/antarjot-singh/">
         <i class="layout-icon fab fa-linkedin"></i>
       </a>
-      <a class="text-light px-2" target="_blank" href="https://github.com/AntarjotSingh">
+      <a class="text-light px-2" href="https://github.com/AntarjotSingh">
         <i class="layout-icon fab fa-github"></i>
       </a>
-      <a class="text-light px-2" target="_blank" href="https://www.youtube.com/channel/UC1SGPh0GDl-vQ2gP9FDjFIg/featured?view_as=subscriber">
-        <i class="layout-icon fab fa-youtube"></i>
-      </a>
+
     </section>
+
   </footer>
+
+  <article id="site-modal" class="modal fade">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <img data-dismiss="modal" class="img-fluid" src="#" alt="Modal Photo">
+      </div>
+    </div>
+  </article>
 
   <script src="js/lib/jquery.min.js"></script>
   <script src="js/lib/bootstrap.bundle.min.js"></script>
